@@ -2,9 +2,4 @@ Attempt to package the app as a flatpak
 
 as of right now when executed it gives this crash
 
-```
-flatpak --user run io.github.cjonas1999.overbind 
-Reading settings from /home/twig/.var/app/io.github.cjonas1999.overbind/data/OverBind/OverBind_app_settings.json
-[2025-12-24][11:43:15][ERROR][overbind] PanicHookInfo { payload: Any { .. }, location: Location { file: "src/main.rs", line: 357, col: 14 }, can_unwind: true, force_no_backtrace: false }
-PanicHookInfo { payload: Any { .. }, location: Location { file: "src/main.rs", line: 357, col: 14 }, can_unwind: true, force_no_backtrace: false }
-```
+https://private-user-images.githubusercontent.com/119701717/530064229-6105bac7-7c9d-4310-99f0-11f65ca051d3.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjY2MDAzNjcsIm5iZiI6MTc2NjYwMDA2NywicGF0aCI6Ii8xMTk3MDE3MTcvNTMwMDY0MjI5LTYxMDViYWM3LTdjOWQtNDMxMC05OWYwLTExZjY1Y2EwNTFkMy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMjI0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTIyNFQxODE0MjdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mNjY0ZTVkMTMxOWUwNTc2ZGQ0MDdjZmY0ZmIzY2YwODFlNmYwMGQ1MWFhOTllZjc1MzUwZTk2NmRkODViNGY1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.OtNNnJ5GmHMDdipV72BvzlYh4_3n7mb7tioEZ7xg6oM
