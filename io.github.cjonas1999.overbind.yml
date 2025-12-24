@@ -1,16 +1,15 @@
-id: com.leohanney.Volaris
+id: io.github.cjonas1999.overbind
 runtime: org.gnome.Platform
 runtime-version: '49'
 sdk: org.gnome.Sdk
 
-command: volaris-gui
-rename-icon: com.leohanney.Volaris
+command: OverBind
 finish-args:
   - --socket=wayland
   - --socket=fallback-x11
   - --share=network
   - --share=ipc
-  - --device=dri
+  - --device=all
 
 
 modules:
@@ -22,20 +21,20 @@ modules:
         sha256: c8357067db85d5b6b92e866bc51c7b30b6d7806b42bbdaabadbfb71316e370fb
         only-arches: [x86_64]
         dest-filename: OverBind.deb
-      - type: file
-        url: https://raw.githubusercontent.com/volar-is/volaris-gui/84dccdc438c22ea8ee2326fc4e3fd012d59fb1b7/flatpak.xml
-        sha256: 27e34e72f089777b4a30312ebd5471d0f9ff0a0e08d8cdd0eff3f5ee01b6a58a
-      - type: file
-        url: https://raw.githubusercontent.com/volar-is/volaris-gui/912ffd5c3b77b138f985753066767f07017cc26c/com.leohanney.Volaris.desktop
-        sha256: 32bbb44a96c9a1ebfaa1bb4ad3f84fe962c01529fab0eeb31d03f123a1b48562
+      #- type: file
+        #url: https://raw.githubusercontent.com/Twig6943/OverBindFlatpak/refs/heads/main/io.github.cjonas1999.overbind.metainfo.xml
+        #sha256: 6873a393c06427a4bf9ef02d13398055c56f62cf306275855df278aaad820995
+      #- type: file
+        #url: https://raw.githubusercontent.com/volar-is/volaris-gui/912ffd5c3b77b138f985753066767f07017cc26c/com.leohanney.Volaris.desktop
+        #sha256: 32bbb44a96c9a1ebfaa1bb4ad3f84fe962c01529fab0eeb31d03f123a1b48562
 
     build-commands:
-       - ar -x Volaris.deb
+       - ar -x OverBind.deb
        - tar -xf data.tar.gz
        - mkdir -p /app/bin
        - cp -r usr/bin/* /app/bin
-       - install -Dm644 usr/share/icons/hicolor/128x128/apps/volaris-gui.png /app/share/icons/hicolor/128x128/apps/com.leohanney.Volaris.png
-       - install -Dm644 usr/share/icons/hicolor/32x32/apps/volaris-gui.png /app/share/icons/hicolor/32x32/apps/com.leohanney.Volaris.png
-       - install -Dm644 usr/share/icons/hicolor/256x256@2/apps/volaris-gui.png /app/share/icons/hicolor/256x256/apps/com.leohanney.Volaris.png
-       - install -Dm644 com.leohanney.Volaris.desktop /app/share/applications/com.leohanney.Volaris.desktop
-       - install -Dm644 flatpak.xml /app/share/metainfo/com.leohanney.Volaris.metainfo.xml
+       - install -Dm644 usr/share/icons/hicolor/32x32/apps/OverBind.png /app/share/icons/hicolor/32x32/apps/io.github.cjonas1999.overbind.png
+       - install -Dm644 usr/share/icons/hicolor/128x128/apps/OverBind.png /app/share/icons/hicolor/128x128/apps/io.github.cjonas1999.overbind.png
+       - install -Dm644 usr/share/icons/hicolor/256x256@2/apps/OverBind.png /app/share/icons/hicolor/256x256/apps/io.github.cjonas1999.overbind.png
+       - install -Dm644 usr/share/applications/OverBind.desktop /app/share/applications/io.github.cjonas1999.overbind.desktop
+       #- install -Dm644 io.github.cjonas1999.overbind.metainfo.xml /app/share/metainfo/io.github.cjonas1999.overbind.metainfo.xml
