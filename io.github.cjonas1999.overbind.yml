@@ -24,9 +24,6 @@ modules:
       #- type: file
         #url: https://raw.githubusercontent.com/Twig6943/OverBindFlatpak/refs/heads/main/io.github.cjonas1999.overbind.metainfo.xml
         #sha256: 6873a393c06427a4bf9ef02d13398055c56f62cf306275855df278aaad820995
-      #- type: file
-        #url: https://raw.githubusercontent.com/volar-is/volaris-gui/912ffd5c3b77b138f985753066767f07017cc26c/com.leohanney.Volaris.desktop
-        #sha256: 32bbb44a96c9a1ebfaa1bb4ad3f84fe962c01529fab0eeb31d03f123a1b48562
 
     build-commands:
        - ar -x OverBind.deb
@@ -36,5 +33,9 @@ modules:
        - install -Dm644 usr/share/icons/hicolor/32x32/apps/OverBind.png /app/share/icons/hicolor/32x32/apps/io.github.cjonas1999.overbind.png
        - install -Dm644 usr/share/icons/hicolor/128x128/apps/OverBind.png /app/share/icons/hicolor/128x128/apps/io.github.cjonas1999.overbind.png
        - install -Dm644 usr/share/icons/hicolor/256x256@2/apps/OverBind.png /app/share/icons/hicolor/256x256/apps/io.github.cjonas1999.overbind.png
+
+       - install -Dm644 usr/lib/OverBind/icons/tray_icon_on.png /app/share/OverBind/icons/tray_icon_on.png
+       - install -Dm644 usr/lib/OverBind/icons/tray_icon_off.png /app/share/OverBind/icons/tray_icon_off.png
+
        - install -Dm644 usr/share/applications/OverBind.desktop /app/share/applications/io.github.cjonas1999.overbind.desktop
        #- install -Dm644 io.github.cjonas1999.overbind.metainfo.xml /app/share/metainfo/io.github.cjonas1999.overbind.metainfo.xml
