@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <component type="desktop-application">
-    <id>io.github.benjamimgois.goverlay</id>
+    <id>io.github.cjonas1999.overbind</id>
 
     <name>App</name>
     <summary>Goverlay</summary>
